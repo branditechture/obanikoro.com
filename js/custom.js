@@ -53,25 +53,5 @@ $(function(){ // When the page is loaded...
 
     // Validate form
     offerForm.validate({
-        submitHandler: function(form){
-            // Submit form
-            offerForm.ajaxSubmit({
-                success: function(msg) {                
-                    if(msg.substr(0,16) == "<!-- Success -->"){
-                        formSection.slideUp('slow');
-                        $('.success').html(msg);
-                        $('.success').slideDown('medium');
-                        $('.formerror').slideUp('medium');
-                    } else {
-                        // Automatically refresh the captcha if it's active
-                        if( typeof grecaptcha !== 'undefined' ) {
-                            grecaptcha.reset();
-                        }
-                        $('.formerror').html(msg);
-                        $('.formerror').slideDown('medium');
-                    }
-                }
-            });
-        }
     });     
 });
