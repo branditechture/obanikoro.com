@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <title>YourDomain.com for sale!</title>
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    
+    <!-- Include jQuery with local fallback -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.8.3.min.js"><\/script>')</script>
+
+    <script type="text/javascript" src="js/jquery.form.js"></script><!-- Submit the form with AJAX -->
+    <script type="text/javascript" src="js/jquery.blockUI.js"></script><!-- Enhances the loading screen when a form is submitted -->
+    <script type="text/javascript" src="js/jquery.infieldlabel.min.js"></script><!-- Toggles Form Labels -->
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script><!-- Validates form -->
+            <script src='https://www.google.com/recaptcha/api.js'></script><!-- reCAPTCHA API -->
+        <script type="text/javascript" src="js/custom.js"></script><!-- Activate plugins and other settings -->
+    
+    <!-- To switch the theme style, un-comment the swiss.css line, and comment the industry.css line -->
+    <link rel="stylesheet" type="text/css" href="css/industry.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/swiss.css" /> -->
+    
+    <!-- IE 6 Fixes -->
+    <!--[if lte IE 6]>
+        <script src="js/DD_belatedPNG.js"></script>
+        <script>DD_belatedPNG.fix('*');</script>
+    <![endif]--> 
+</head>
+<body>
+    <a href="linktoportfolio.html" title="More of my Domains" id="portfolioButton"><img src="images/icons/world_link.png" alt="Domains" />More of my Domains</a>
+    <div id="domainPortfolio">
+    <ul>
+        <li><a href="#">DomainOne.com</a></li>
+        <li><a href="#">DomainTwo.com</a></li>
+        <li><a href="#">DomainThree.com</a></li>
+        <li><a href="#">DomainFour.com</a></li>
+        <li><a href="#">DomainFive.com</a></li>
+    </ul>
+    </div><!-- end #domainPortfolio -->
+    
+    <div id="outerWrapper">
+        <h1>YourDomain.com <span class="saleTag">is for sale!</span></h1>
+        <div id="wrapper">
+            <h2 class="topHeading">Minimum Offer</h2>
+            <p class="minPrice">$750</p>
+            <h2>Request Information</h2>
+            <div id="formSection">
+                <form method="post" action="includes/sendEmail.php" id="offerForm">
+                    <p><label for="name"><img src="images/icons/user.png" alt="Name"> Name</label>
+                    <input name="name" type="text" id="name" size="30" class="required"></p>
+                    
+                    <p><label for="email"><img src="images/icons/email.png" alt="Email"> Email</label>
+                    <input name="email" type="text" id="email" size="30" class="required email"></p>
+                    
+                    <p><label for="comments"><img src="images/icons/comment.png" alt="Comments"> Offer/Message</label>
+                    <textarea name="comments" cols="40" rows="8" id="comments" class="required"></textarea></p>
+
+                                            <div class="g-recaptcha" data-sitekey="6LfccQoTAAAAAE6nZYicWzsF6TeEVD6Mh7072p3M"></div>
+                    
+                    <noscript><p><input class="altSubmitButton" type="submit" value="Send Request" name="submit" tabindex="4"></p></noscript>
+                    <p><a class="button" id="submit" title="Submit" href="#"><img src="images/icons/email_go.png" alt="send">Send Request</a></p>
+                </form>
+            </div><!-- end #formSection -->
+            <div class="success section">
+                <p><img src="images/icons/accept.png" alt="Success" class="imgLeft" /><strong>Your message has been sent!</strong> I'll get back to you as as soon as I can.</p>
+            </div><!-- end .success message -->
+            <div class="formerror section">
+                <p><img src="images/icons/exclamation.png" alt="Error" class="imgLeft" /><strong>Sorry, there was an error sending the message. Please try again later.</strong></p>
+            </div><!-- end .error message -->
+            
+            <h2>My Domain Updates</h2>
+            <div class="section" id="twitter">
+                <p id="tweet"></p>
+                <p>
+                    <a href="http://twitter.com/dloewen" target="_blank" title="Domain Tweets" class="button"><img src="images/icons/twitter.png" alt="Twitter" />Follow me on Twitter</a>
+                </p>
+            </div><!-- end .section -->
+            
+            <div id="footer" class="section">
+                <p>&copy; 2015 LoewenWeb. You can remove this once purchased.</p>
+            </div>
+            <!-- end footer section -->
+        </div><!-- end #wrapper -->
+    </div><!-- end #outerWrapper -->
+</body>
+</html>
