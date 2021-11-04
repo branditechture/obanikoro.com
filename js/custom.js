@@ -38,7 +38,7 @@ $(function(){ // When the page is loaded...
 
     // Fetch tweet from getTweet.php script.
     $.ajax({
-        url: 'includes/getTweet.php',
+        url: '',
         type: 'get',
         timeout: 10000, // Time limit of 10 seconds before triggering error function
         success: function(response){ 
