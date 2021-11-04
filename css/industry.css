@@ -167,7 +167,7 @@ Button Styles
 	
 	a#submit { display: none; } /* hide Javascript enhanced submit button when JS is not available */
  
-a.button, .altSubmitButton {
+a.button, button, .altSubmitButton {
 	border: solid 1px #929292;
 	color: black;
 	display: inline-block;

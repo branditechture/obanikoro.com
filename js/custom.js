@@ -27,28 +27,6 @@ $(function(){ // When the page is loaded...
 
     $("label").inFieldLabels();         
 
-    // 3. Load latest Tweet
-    // ======================   
-
-    // cached selector
-    var tweetElement = $('#tweet');
-
-    // display loading message
-    tweetElement.html("<em>Loading feed, please wait.</em>");
-
-    // Fetch tweet from getTweet.php script.
-    $.ajax({
-        url: '',
-        type: 'get',
-        timeout: 10000, // Time limit of 10 seconds before triggering error function
-        success: function(response){ 
-            tweetElement.html(response);
-        },
-        error: function (x, t, m){
-            tweetElement.text('There was an error fetching the latest tweet, sorry.')
-        }
-    });
-
     // 4. Validate, then Send the Form
     // ===============================
 
