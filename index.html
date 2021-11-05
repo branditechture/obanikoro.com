@@ -1,79 +1,196 @@
 <!DOCTYPE html>
-<head>
-    <meta charset="utf-8" />
-    <title>Obanikoro.org is for sale!</title>
-    
-    <link rel="shortcut icon" href="favicon.ico">
-    
-    <!-- Include jQuery with local fallback -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery-1.8.3.min.js"><\/script>')</script>
+<html lang="en-us" class="no-js">
 
-    <script type="text/javascript" src="js/jquery.form.js"></script><!-- Submit the form with AJAX -->
-    <script type="text/javascript" src="js/jquery.blockUI.js"></script><!-- Enhances the loading screen when a form is submitted -->
-    <script type="text/javascript" src="js/jquery.infieldlabel.min.js"></script><!-- Toggles Form Labels -->
-    <script type="text/javascript" src="js/jquery.validate.min.js"></script><!-- Validates form -->
-            <script src='https://www.google.com/recaptcha/api.js'></script><!-- reCAPTCHA API -->
-        <script type="text/javascript" src="js/custom.js"></script><!-- Activate plugins and other settings -->
-    
-    <!-- To switch the theme style, un-comment the swiss.css line, and comment the industry.css line -->
-    <link rel="stylesheet" type="text/css" href="css/industry.css" />
-    <!-- <link rel="stylesheet" type="text/css" href="css/swiss.css" /> -->
-    
-    <!-- IE 6 Fixes -->
-    <!--[if lte IE 6]>
-        <script src="js/DD_belatedPNG.js"></script>
-        <script>DD_belatedPNG.fix('*');</script>
-    <![endif]--> 
-</head>
-<body>
-    <a href="linktoportfolio.html" title="Similar Domains for Sale" id="portfolioButton"><img src="images/icons/world_link.png" alt="Domains" />Similar Domains for Sale</a>
-    <div id="domainPortfolio">
-    <ul>
-        <li><a href="https://obanikoro.org">Obanikoro.org</a></li>
-        <li><a href="https://obanikoro.com">Obanikoro.com</a></li>
-    </ul>
-    </div><!-- end #domainPortfolio -->
-    
-    <div id="outerWrapper">
-        <h1>Obanikoro.org <span class="saleTag">is for sale!</span></h1>
-        <div id="wrapper">
-            <h2 class="topHeading">Minimum Offer</h2>
-            <p class="minPrice">$450</p><br>
-            <p style="text-align: center;"> <a target="_blank" href="https://www.google.com/search?q=450+USD+to+NGN">Convert to NGN (₦)</a><br>
-            3.5% conversion fees may apply during payment</p>
-            <h2>Request Information/Submit Your Bid</h2>
-            <p style="text-align: center;">You will typically get a response within an hour</p>
-            <div id="formSection">
-                <form method="post" action="https://formspree.io/f/xleaywnz" id="offerForm">
-                    <p><label for="name"><img src="images/icons/user.png" alt="Name"> Your Name</label>
-                    <input name="name" type="text" id="name" size="30" class="required"></p>
-                    
-                    <p><label for="email"><img src="images/icons/email.png" alt="Email"> Email</label>
-                    <input name="email" type="text" id="email" size="30" class="required email"></p>
-                    
-                    <p><label for="comments"><img src="images/icons/comment.png" alt="Comments">What is your offer?</label>
-                    <textarea name="comments" cols="40" rows="8" id="comments" class="required"></textarea></p>
+	<head>
+		<meta charset="utf-8">
+        <title>Obanikoro.org is for sale</title>
+        <meta name="description" content="The description should optimally be between 150-160 characters.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Madeon08">
 
-                    <noscript><p><input class="altSubmitButton" type="submit" value="Send Request" name="submit" tabindex="4"></p></noscript>
-                    <p><a class="button" type="submit" id="submit" title="Submit" href="#"><img src="images/icons/email_go.png" alt="send">Send Request</a></p>
-                </form>
-            </div><!-- end #formSection -->
-            <div class="success section">
-                <p><img src="images/icons/accept.png" alt="Success" class="imgLeft" /><strong>Your message has been sent!</strong> We'll get back to you as as soon as I can.</p>
-            </div><!-- end .success message -->
-            <div class="formerror section">
-                <p><img src="images/icons/exclamation.png" alt="Error" class="imgLeft" /><strong>Sorry, there was an error sending the message. Please try again later.</strong></p>
-            </div><!-- end .error message -->
-            
-            <div id="footer" class="section">
-                <p>&copy; 2022 Branditechture Premium Domains.</p>
-                <div style="text-align: center;">
-                    Proudly Nigerian&nbsp; <img style="margin-bottom:-2px;" title="Flag of Nigeria" src="images/Flag_of_Nigeria.svg" alt="Flag of Nigeria" width="25" height="auto">					</div>
+        <!-- ================= Favicon ================== -->
+        <!-- Standard -->
+        <link rel="shortcut icon" href="favicon.ico">
 
-            </div>
-            <!-- end footer section -->
-        </div><!-- end #wrapper -->
-    </div><!-- end #outerWrapper -->
-</body>
+        <!-- ============== Resources style ============== -->
+        <link rel="stylesheet" href="style.css" />
+	</head>
+	
+	<body>
+
+		<!-- Overlay -->
+		<div class="global-overlay"></div>
+		
+		<!-- START - Home section -->
+		<section id="home">
+
+			<!-- START - Content -->
+			<div class="content ">
+
+				<h1>Obanikoro.org<br>is for sale!</h1>
+				<p>Need a similar domain name? Check <a href="https://obanikoro.com"><span style="font-size:16px; text-decoration: underline;">Obanikoro.com</span></a>
+
+				<nav>
+					<ul>
+						<!--
+						<li>
+							<a href="#offer-part" class="trigger light-btn">RECIEVE PAYMENT </a>
+						</li>	
+						-->
+						<li>
+							<a href="#offer-part" class="action-btn trigger">CLAIM THIS DOMAIN</a>
+						</li>
+
+					</ul>
+				</nav>
+				<br> <br>
+				<h5 style="font-size:8px;">ADVERTISEMENT</h5>
+				<a target="_blank" href="https://branditechture.agency/lets-build-your-website/"><img style="border-radius: 5px;" width="400" src="webdesignservices.svg" alt=""></a>
+			</div>
+			<!-- END - Content -->
+				</section>
+		<!-- END - Home section -->
+
+		<!-- START - Offer part -->
+		<div id="offer-part">
+
+			<!-- Cross to close the Offer part -->
+			<button class="close-offer" data-dialog-close><i class="icon ion-android-close"></i></button>
+						
+			<!-- START - Form block -->
+			<div class="form-block">
+						
+				<span id="global-form">
+
+					<!-- <h2 style="visibility: hidden;">Make an offer or Purchase Instantly</h2> -->
+			
+					<p>
+					<strong><strong>INSTANTLY</strong> claim this Domain for <span style="font-size: large;">$700</span> or name your price.</strong> <br>
+					We typically respond within 30 minutes.		
+					</p>
+
+	                <!-- START - Offer Form -->
+	            	<form action="https://formsubmit.co/branditechture@gmail.com" id="offer-form" name="offer-form" method="POST" data-name="Contact Form" action="">
+
+	            		<div class="row">
+
+	                        <!-- Full name -->
+	                        <div class="col-xs-12 col-sm-12 col-lg-12 field-offer">
+	                            <div class="form-group">
+	                            	<label><i class="icon ion-person"></i></label>
+	                                <input type="text" id="name" class="form form-control" placeholder="My Name*" onfocus="this.placeholder = ''" onblur="this.placeholder = 'My Name*'" name="name" data-name="Name" required>
+	                            </div>
+	                        </div>
+
+	                        <!-- E-mail -->
+	                        <div class="col-xs-12 col-sm-12 col-lg-12 field-offer">
+	                            <div class="form-group">
+	                            	<label><i class="icon ion-at"></i></label>
+	                                <input type="email" id="email" class="form form-control" placeholder="My Email*" onfocus="this.placeholder = ''" onblur="this.placeholder = 'My Email*'" name="email-address" data-name="Email Address" required>
+	                            </div>
+	                        </div>
+
+	                        <!-- Offer -->
+	                        <div class="col-xs-12 col-sm-12 col-lg-12 field-offer">
+	                            <div class="form-group">
+	                            	<label><i class="icon ion-social-usd"></i></label>
+	                                <input type="text" id="offer" class="form form-control" placeholder="My Offer* (digits only)" onfocus="this.placeholder = ''" onblur="this.placeholder = 'My Offer* (digits only)'" name="offer" data-name="Offer">
+	                            </div>
+	                        </div>
+							<!--Submit Action-->
+							<input type="hidden" name="_next" value="https://obanikoro.org/thanks.html">
+
+	                        <!-- Button submit -->
+	                		<div class="col-xs-12 col-sm-12 col-lg-12 field-offer">
+	                			<button type="submit" id="valid-form" class="btn btn-color">Send my Offer!</button>
+	                		</div>
+
+	                    </div>
+	    
+	                </form>
+	                <!-- END - Offer form -->
+
+	            </span>
+	            
+	            <!-- START - Answer for the offer form is displayed in the next div, do not remove it. -->       
+                <div id="block-answer">
+
+					<div id="answer"></div>
+
+				</div>
+				<!-- END - Answer... -->
+
+			</div>
+			<!-- END - Form block -->			
+
+		</div>
+		<!-- END - Offer part -->
+
+		<!-- START - Bottom part -->
+		<div class="bottom-part">
+
+			<div class="row">
+
+				<!-- START - Contact box -->
+				<div class="col-xs-12 col-sm-6 col-lg-6 contact-box">
+
+					<h5>© Branditechture Domains.</h5>
+				
+					<p>BD is a partnership with UK domain brokerage firm, <br> <strong>Antourage</strong>, to democratize access to premium domains on the internet.<br>
+						If you have any further suggestions, questions or comments <strong>contact us!</strong>
+					</p>
+
+				</div>
+				<!-- END - Contact box -->
+
+				<!-- START - Contact box -->
+				<div class="col-xs-12 col-sm-6 col-lg-6 contact-box">
+
+					<h4>Need more info?</h4>
+
+					<p>
+						<i class="icon ion-ios-telephone"></i> <strong>Phone :</strong> +234 (0) 903-483-4608 <br>
+						<i class="icon ion-ios-email"></i> <strong>Email :</strong> <a href="domains@branditechture.agency" class="phone-mail-link">domains@branditechture.agency</a><br> 
+						Proudly Nigerian&nbsp; <img style="margin-bottom:-2px;" title="Flag of Nigeria" src="Nigeria-Flag.svg" alt="Flag of Nigeria" width="25" height="auto">
+
+					</p>
+
+				</div>
+				<!-- END - Contact box -->
+
+			</div>
+
+		</div>
+		<!-- END - Bottom part -->
+
+		<!-- ///////////////////\\\\\\\\\\\\\\\\\\\ -->
+	    <!-- ********** Resources jQuery ********** -->
+	    <!-- \\\\\\\\\\\\\\\\\\\/////////////////// -->
+		
+		<!-- * Libraries jQuery, Easing and Bootstrap - Be careful to not remove them * -->
+		<script src="jquery-1.12.3.min.js"></script>
+		<script src="jquery.easing.min.js"></script>
+		<script src="bootstrap.min.js"></script>
+
+		<!-- Contact form plugin -->
+		<script src="offer.js"></script>
+
+		<!-- Main JS File -->
+		<script src="main.js"></script>
+
+<!--  Google Analytics 
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-60503361-1', 'auto');
+			ga('send', 'pageview');
+		</script> -->
+		
+		<!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
+
+	</body>
+
 </html>
